@@ -1,0 +1,29 @@
+.box .card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s ease-in-out;
+
+    border-radius: 10px;
+}
+
+.card__title {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-orange-color);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 10px;
+}

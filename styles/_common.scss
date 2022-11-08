@@ -1,0 +1,25 @@
+body {
+    color: var(--text-color);
+    background: var(--primary-color);
+}
+
+main {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+main section {
+    min-height: 100vh;
+}
+
+main .box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
