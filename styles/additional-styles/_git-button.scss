@@ -1,0 +1,67 @@
+.social-cards-box {
+    justify-content: space-evenly !important;
+
+    $social-btn-size: 50px;
+
+    & .btn-git {
+        position: relative;
+    
+        width: $social-btn-size;
+        height: $social-btn-size;
+        
+        padding: 15px;
+        margin: 10px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        cursor: pointer;
+    
+        border-radius: 50%;
+    
+        font-size: $social-btn-size / 2;
+    
+        background: $white;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        
+        transition: transform 0.25s ease-in-out;
+
+        & .icon {
+            display: flex;
+            justify-content: center;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            border-radius: 50%;
+
+            transition: all 0.25s ease-in-out;
+        }
+
+        &::before{
+            border-radius: 0;
+            margin-top: -100%;
+            box-shadow: inset 0 0 0 $social-btn-size $orange;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:hover::before{
+            margin-top: 0;
+        }
+    }
+}

@@ -8,9 +8,10 @@
 @import './main-header';
 
 // Additional styles
-@import './card';
-@import './glass-cards';
-@import './business-cards';
+@import '../styles/additional-styles/card';
+@import '../styles/additiomal-styles/glass-cards';
+@import '../styles/additiomal-styles/business-cards';
+@import '../styles/additiomal-styles/git-button';
 
 // Adaptivity
 @import './adaptive';
