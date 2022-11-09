@@ -4,9 +4,12 @@
 @import './fonts';
 @import './scrollbar';
 @import './system-button';
-@import './main-header';
 
+@import './main-header';
 
 // Additional styles
 @import './card';
 @import './glass_cards';
+
+// Adaptivity
+@import './adaptive';

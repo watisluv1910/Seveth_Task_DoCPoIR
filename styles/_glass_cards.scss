@@ -1,4 +1,5 @@
 .box .glass-card {
+    
     position: relative;
     width: 320px;
     height: 400px;
@@ -20,7 +21,7 @@
         height: 100%;
 
         text-decoration: none;  
-        background: #fff;  
+        background: $white;  
         border-radius: 10px;
 
         transform: skewX(15deg); 
@@ -129,13 +130,14 @@
        
         z-index: 1;
 
-        color: var(--text-color);
+        color: $black;
 
         transition: all 0.5s ease-in-out;
     }
 }
 
 .box .glass-card:hover {
+
     &::before,
     &::after {
         transform: skewX(0deg);

@@ -1,6 +1,6 @@
 body {
-    color: var(--text-color);
-    background: var(--primary-color);
+    color: $black;
+    background: $light-gray;
 }
 
 main {
@@ -10,16 +10,16 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-  
-main section {
-    min-height: 100vh;
-}
 
-main .box {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    & section {
+        min-height: 100vh;
+    }
+
+    & .box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 }

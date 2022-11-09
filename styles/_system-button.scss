@@ -12,25 +12,26 @@
   
     border-radius: 5px;
     border: none;
-    color: var(--secondary-color);
-    background: var(--accent-orange-color);
+    color: $white;
+    background: $orange;
 
     transition: all 0.3s ease-in-out;
-}
 
-.btn-system:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
 
-    /* Add shadow */
-    box-shadow: 0 0 10px 0 var(--accent-orange-color);
+        /* Add shadow */
+        box-shadow: 0 0 10px 0 $orange;
 
-    /* Change color and background color */
-    color: var(--accent-orange-color);
-    background: var(--secondary-color);
-}
+        /* Change color and background color */
+        color: $orange;
+        background: $white;
+    }
 
-.btn-system:active {
-    transform: scale(0.9);
-
-    transition: 0.1s ease-in-out;
+    &:active {
+        box-shadow: none;
+        
+        transform: scale(0.9);
+        transition: 0.1s ease-in-out;
+    }
 }
