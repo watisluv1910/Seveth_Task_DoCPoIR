@@ -673,6 +673,273 @@ header .search-box input {
   margin-top: 0;
 }
 
+.fancy-btn-box .wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 210px;
+  height: 70px;
+  border-radius: 5px;
+  font: 700 24px sans-serif;
+  color: #fff;
+  background: #EB5E28;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.fancy-btn-box .wrapper i {
+  width: 7px;
+  height: 7px;
+}
+.fancy-btn-box .wrapper i:nth-child(n+1):nth-child(-n+30):hover ~ .fancy-btn {
+  --y: 10%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+31):nth-child(-n+60):hover ~ .fancy-btn {
+  --y: 20%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+61):nth-child(-n+90):hover ~ .fancy-btn {
+  --y: 30%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+91):nth-child(-n+120):hover ~ .fancy-btn {
+  --y: 40%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+121):nth-child(-n+150):hover ~ .fancy-btn {
+  --y: 50%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+151):nth-child(-n+180):hover ~ .fancy-btn {
+  --y: 60%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+181):nth-child(-n+210):hover ~ .fancy-btn {
+  --y: 70%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+211):nth-child(-n+240):hover ~ .fancy-btn {
+  --y: 80%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+241):nth-child(-n+270):hover ~ .fancy-btn {
+  --y: 90%;
+}
+.fancy-btn-box .wrapper i:nth-child(n+271):nth-child(-n+300):hover ~ .fancy-btn {
+  --y: 100%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+1):hover ~ .fancy-btn {
+  --x: 3.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+2):hover ~ .fancy-btn {
+  --x: 6.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+3):hover ~ .fancy-btn {
+  --x: 10%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+4):hover ~ .fancy-btn {
+  --x: 13.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+5):hover ~ .fancy-btn {
+  --x: 16.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+6):hover ~ .fancy-btn {
+  --x: 20%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+7):hover ~ .fancy-btn {
+  --x: 23.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+8):hover ~ .fancy-btn {
+  --x: 26.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+9):hover ~ .fancy-btn {
+  --x: 30%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+10):hover ~ .fancy-btn {
+  --x: 33.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+11):hover ~ .fancy-btn {
+  --x: 36.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+12):hover ~ .fancy-btn {
+  --x: 40%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+13):hover ~ .fancy-btn {
+  --x: 43.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+14):hover ~ .fancy-btn {
+  --x: 46.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+15):hover ~ .fancy-btn {
+  --x: 50%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+16):hover ~ .fancy-btn {
+  --x: 53.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+17):hover ~ .fancy-btn {
+  --x: 56.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+18):hover ~ .fancy-btn {
+  --x: 60%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+19):hover ~ .fancy-btn {
+  --x: 63.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+20):hover ~ .fancy-btn {
+  --x: 66.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+21):hover ~ .fancy-btn {
+  --x: 70%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+22):hover ~ .fancy-btn {
+  --x: 73.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+23):hover ~ .fancy-btn {
+  --x: 76.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+24):hover ~ .fancy-btn {
+  --x: 80%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+25):hover ~ .fancy-btn {
+  --x: 83.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+26):hover ~ .fancy-btn {
+  --x: 86.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+27):hover ~ .fancy-btn {
+  --x: 90%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+28):hover ~ .fancy-btn {
+  --x: 93.3333333333%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+29):hover ~ .fancy-btn {
+  --x: 96.6666666667%;
+}
+.fancy-btn-box .wrapper i:nth-child(30n+30):hover ~ .fancy-btn {
+  --x: 100%;
+}
+.fancy-btn-box .wrapper .fancy-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+  grid-column: 1/span 30;
+  grid-row: 1/span 10;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  transition: opacity 0.25s ease-in-out;
+}
+.fancy-btn-box .wrapper i:hover ~ .fancy-btn {
+  background: radial-gradient(circle 110px at var(--x) var(--y), rgba(64, 67, 242, 0.4), rgba(169, 242, 136, 0));
+}
+
+.box .card.old {
+  position: relative;
+  width: 300px;
+  min-height: 400px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+
+.card.old:hover {
+  transform: scale(1.05);
+}
+
+.old.card__img img {
+  height: 150px;
+}
+
+.old.card__title {
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #EB5E28;
+}
+
+.old.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.politics-card .card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.politics-card .card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+
+.politics-card .card__content {
+  width: 100%;
+  height: 100%;
+  scale: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.politics-card:nth-child(-n+2) .card__text {
+  color: #fff;
+}
+
+.politics-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  z-index: 1;
+  border-radius: inherit;
+  transition: all 0.5s ease-in-out;
+}
+
+.politics-card:nth-child(1)::before {
+  /* Semi-transparent linear gradient */
+  background: linear-gradient(0deg, rgba(228, 9, 9, 0.5), rgba(16, 16, 193, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.politics-card:nth-child(2)::before {
+  /* Semi-transparent linear gradient */
+  background: linear-gradient(0deg, rgba(51, 172, 18, 0.5), rgba(183, 17, 17, 0.5));
+}
+
+.politics-card:nth-child(3)::before {
+  /* Semi-transparent linear gradient */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 242, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.politics-card.blur {
+  filter: blur(20px);
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.politics-card:hover::before {
+  top: 0;
+  height: 100%;
+}
+
+.politics-card:hover .card__content {
+  scale: 1;
+  z-index: 1;
+}
+
 /* *Responsive part */
 @media screen and (max-width: 850px) {
   header .nav-group .nav-item.nav-list {

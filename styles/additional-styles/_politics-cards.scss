@@ -1,0 +1,129 @@
+.box .card.old {
+    position: relative;
+
+    width: 300px;
+    min-height: 400px;
+
+    padding: 20px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    transition: all 0.5s ease-in-out;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    background: $white;
+}
+
+.card.old:hover {
+    transform: scale(1.05);
+}
+
+.old.card__img img {
+    height: 150px;
+}
+
+.old.card__title {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+.old.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 10px;
+}
+
+.politics-card .card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+}
+
+.politics-card .card__img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.politics-card .card__content {
+    width: 100%;
+    height: 100%;
+
+    scale: 0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.politics-card:nth-child(-n + 2) .card__text {
+    color: $white;
+}
+
+.politics-card::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
+    height: 0;
+
+    z-index: 1;
+
+    border-radius: inherit;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.politics-card:nth-child(1)::before {
+    /* Semi-transparent linear gradient */
+    background: linear-gradient(0deg, rgba(228, 9, 9, 0.5), rgba(16, 16, 193, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.politics-card:nth-child(2)::before {
+    /* Semi-transparent linear gradient */
+    background: linear-gradient(0deg, rgba(51, 172, 18, 0.5), rgba(183, 17, 17, 0.5));
+}
+
+.politics-card:nth-child(3)::before {
+    /* Semi-transparent linear gradient */
+    background: linear-gradient(0deg,  rgba(255, 255, 255, 0.5), rgba(255, 242, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.politics-card.blur {
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.politics-card:hover::before {
+    top: 0;
+
+    height: 100%;
+}
+
+.politics-card:hover .card__content {
+    scale: 1;
+
+    z-index: 1;
+}
