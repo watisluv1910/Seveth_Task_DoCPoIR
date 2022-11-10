@@ -1,0 +1,144 @@
+$colors: (
+    picker-red: #DB2828,
+    picker-blue: #2185D0,
+    picker-green: #21BA45,
+);
+
+.box-item {
+    width: 300px;
+    min-height: 400px;
+
+    padding: 20px;
+    margin: 20px; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    transition: 0.5s ease-in-out;
+    
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: $white;
+
+    color: $white;
+}
+
+.shop-box .product {
+    position: relative;
+    gap: 10px;
+    background: linear-gradient($white, midnightblue);
+}
+
+.product.active {
+    background:
+        linear-gradient(#000 0 0) bottom / 100% 140px no-repeat fixed,
+        linear-gradient($white, midnightblue);
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product .image-box {
+    width: 200px;
+    height: 100px;
+
+    margin-bottom: 20px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.product:nth-child(2) .image-box {
+    height: 200px;
+
+    margin-bottom: 0;
+}
+
+.product .image-box img {
+    transition: all 0.5s ease-in-out;
+}
+
+.product .colorPicker {
+    position: relative;
+    top: 0;
+    left: -100vmax;
+    scale: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.product.active .image-box {
+    transform: translateY(60px);
+}
+
+.product.active .image-box img {
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.product .text-box {
+    scale: 1;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.product.active .text-box {
+    scale: 0;
+}
+
+.product.active .colorPicker {
+    left: 0;
+    scale: 1;
+}
+
+input[type="radio"] {
+    display: none;
+
+    &:checked + label {
+
+        span { 
+            transform: scale(1.25); 
+        }
+
+        @each $name, $value in $colors {
+            .#{$name} {
+            border: 2px solid darken($value, 25%);
+            }
+        } // ? End of each
+    } // ? End of checked + label
+}
+
+label {
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+        span { 
+            transform: scale(1.25); 
+        }
+    }
+
+    span {
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        transition: transform .2s ease-in-out;
+
+        @each $name, $value in $colors {
+            &.#{$name} {
+            background: $value;
+            }
+        }
+    }
+}

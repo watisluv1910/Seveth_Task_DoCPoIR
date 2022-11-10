@@ -1,0 +1,46 @@
+.box .card.old {
+    position: relative;
+
+    width: 300px;
+    min-height: 400px;
+
+    padding: 20px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    transition: all 0.5s ease-in-out;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    background: $white;
+}
+
+.card.old:hover {
+    transform: scale(1.05);
+}
+
+.old.card__img img {
+    height: 150px;
+}
+
+.old.card__title {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+.old.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 10px;
+}
