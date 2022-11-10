@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/css/index.css">
+        <link rel="stylesheet" href="/styles/css/login-page.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div class="nav-group">
+                <ul class="nav-item nav-list" role="list">
+                    <li><a class="nav-link" href="/pages/index.html">Home</a></li>
+                </ul>
+                <div class="nav-item search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="btn search-btn"></ion-icon>
+                        <ion-icon name="close-outline" class="btn close-btn"></ion-icon>
+                    </span>
+                </div>
+                <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search here . . .">
+            </div>
+        </header>
+        <main>
+            <section class="box login-box">
+                <div class="form-wrapper">
+                    <form class="form">
+                        <p class="form__title">Welcome</p>
+                        <div class="form__input">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="button" value="Sign in">
+                        </div>
+                        <div class="form__links">
+                            <a href="#">Forgot Password?</a>
+                        <a href="/pages/register.html" rel="noopener noreferrer">Register</a>
+                        </div>
+                    </form> 
+                    <div class="drops">
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                    </div>
+                </div>   
+            </section>
+        </main>
+
+        <!-- For ion-icons correct work -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- Scripts -->
+        <script src="/js/headerSearch.js"></script>
+    </body>
+</html>

@@ -1,0 +1,237 @@
+header {
+    background: #264653;
+    color: $white;
+
+    & .logo {
+        color: $white;
+    }
+
+    & .nav-group .nav-item.nav-list .nav-link {
+        color: $white;
+
+        &::before {
+            background: $white;
+        }
+    }
+
+    & .search-box {
+        background: #264653;
+
+        & input {
+            background: #264653;
+            color: $white;
+            border-color: $white;
+        }
+    }
+}
+
+main {
+    background: #2A9D8F;
+}
+
+.login-box {
+
+    .form-wrapper {
+        width: fit-content;
+        height: fit-content;
+
+        position: relative;
+
+        background: transparent;
+
+        $trans-white: transparentize($white, 0.7);
+
+        .form {
+            position: relative;
+
+            // height: 320px;
+            padding: 3em;
+
+            z-index: 1;
+
+            text-align: center;
+
+            border-radius: 20px;
+            border-left: 1px solid $trans-white;
+            border-top: 1px solid $trans-white;
+
+            background: $trans-white;
+            backdrop-filter: blur(10px);
+
+            box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.5);
+
+            transition: transform 0.25s ease-in-out;
+
+            &__title {
+                margin-top: 0;
+                margin-bottom: 60px;
+
+                font-size: 1.5em;
+                font-weight: 500;
+
+                opacity: 0.75;
+
+                color: $white;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            &__input {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    width: 300px;
+
+                    margin-bottom: 2em;
+                    padding: 1em;
+
+                    border: none;
+                    border-left: 1px solid $trans-white;
+                    border-top: 1px solid $trans-white;
+                    border-radius: 50px;
+
+                    font-weight: 500;
+
+                    color: $white;
+
+                    background: transparent;
+                    backdrop-filter: blur(5px);
+                    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.25);
+
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+                    transition: all 0.25s ease-in-out;
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.1);
+                        box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.25);
+                    }
+
+                    &[type="email"],
+                    &[type="password"] {
+
+                        &::placeholder {
+                            color: $white;
+                            font-weight: 400;
+                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                        }
+                        
+                        &:focus {
+                            background: rgba(255, 255, 255, 0.1);
+                            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.25);
+                        }
+                    }
+
+                    &[type="button"] {
+                        width: 150px;
+                        margin-top: 10px;
+
+                        font-size: 1em;
+                        font-weight: 500;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &:active {
+                            background: rgba(255, 255, 255, 0.25);
+                        }
+                    }
+                }
+            }
+
+            &__links {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: $white;
+
+                    &:hover {
+                        text-shadow: 2px 2px 6px #00000040;
+                    }
+
+                    &:active {
+                        text-shadow: none;
+                    }
+                }
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+
+        .drops .drop {
+            position: absolute;
+
+            z-index: 0;
+        
+            border-radius: 10px;
+            border-left: 1px solid $trans-white;
+            border-top: 1px solid $trans-white;
+        
+            background: $trans-white;
+            backdrop-filter: blur(10px);
+        
+            box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+        
+            transition: all 0.25s ease-in-out;
+        
+            &:nth-child(1) {
+                top: -20px;
+                left: -40px;
+        
+                width: 80px;
+                height: 80px;
+            }
+        
+            &:nth-child(2) {
+                bottom: -30px;
+                right: -10px;
+        
+                width: 80px;
+                height: 80px;
+
+                z-index: 1;
+            }
+        
+            &:nth-child(3) {
+                bottom: 120px;
+                right: -50px;
+        
+                width: 100px;
+                height: 100px;
+            }
+        
+            &:nth-child(4) {
+                top: -60px;
+                right: -60px;
+        
+                width: 120px;
+                height: 120px;
+
+                z-index: 1;
+            }
+        
+            &:nth-child(5) {
+                bottom: 170px;
+                left: 90px;
+        
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+a,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}

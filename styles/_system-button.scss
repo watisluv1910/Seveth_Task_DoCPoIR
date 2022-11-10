@@ -12,7 +12,7 @@
   
     border-radius: 5px;
     border: none;
-    color: $white;
+    color: $pastel-white;
     background: $orange;
 
     transition: all 0.3s ease-in-out;
@@ -25,7 +25,7 @@
 
         /* Change color and background color */
         color: $orange;
-        background: $white;
+        background: $pastel-white;
     }
 
     &:active {
